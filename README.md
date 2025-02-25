@@ -4,9 +4,9 @@ permalink: "/about/"
 layout: page
 ---
 
-## Installation
+## who is vaishnavi
 
-Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
+vaishnavi (navi) vuyyuru is a fourth-year business administration student at georgia tech with a concentration in it management, certificate in business analytics, and minor in leadership studies. after graduating in may 2025, she is planning to pursue her master's in analytics at georgia tech.
 
 ## Features
 
