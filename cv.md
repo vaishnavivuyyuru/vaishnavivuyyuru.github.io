@@ -86,6 +86,6 @@ layout: page
 - increased local business sponsorship engagement by 50% to promote cultural outreach in the greater atlanta community  
 
 ## skills & interests
-**technology:** microsoft excel, power query, sql, r, tableau, powerbi, html, python, smartsheet, adobe cloud  
-**languages:** english (native), telugu (fluent), spanish (fluent), hindi (conversational), asl (basic)  
-**interests:** sewing, embroidery, crocheting, djing, national parks, board games, dancing, reading, food enthusiast
+- **technology:** microsoft excel, power query, sql, r, tableau, powerbi, html, python, smartsheet, adobe cloud  
+- **languages:** english (native), telugu (fluent), spanish (fluent), hindi (conversational), asl (basic)  
+- **interests:** sewing, embroidery, crocheting, djing, national parks, board games, dancing, reading, food enthusiast
