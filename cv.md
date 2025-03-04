@@ -12,27 +12,27 @@ layout: page
 - **honors:** zell miller scholarship, john r. battle award for student excellence, faculty honors, dean’s list
 
 ## experience
-### **wheelchariot** | social impact intern |  *january 2025 – april 2025*
+### **wheelchariot** | social impact intern |  january 2025 – april 2025
 - researched & compiled detailed documents on 10+ potential partner organizations, expanding the disability-focused network
 - created a strategic content calendar and designed 12 social media posts with inclusive captions to boost audience engagement
 - strengthened relationships and increased engagement by sending 30+ personal emails to professors and community partners
 
-### **kpmg** | firmwide analytics intern |  *june 2024 – august 2024*
+### **kpmg** | firmwide analytics intern |  june 2024 – august 2024
 - enhanced data harvesting ml/ai platform via qa testing/bug detection, saving 3-6 weeks in data extraction time for users
 - developed supplemental salesforce dashboard framing to assist in evaluating client-facing opportunities for 100+ partners
 - refined deal advisory llm via randomized testing so gpt model accurately interprets 700+ lines of public relations data
 
-### **ncr corporation** | product/program management intern |  *may 2023 – august 2023*
+### **ncr corporation** | product/program management intern |  may 2023 – august 2023
 - benchmarked & measured 10+ okrs and provided an executive-level report by producing a mega smartsheet dashboard  
 - mined, cleaned, & aggregated data sets with 200k+ rows using power query & bi to enhance visualization of unsold pids  
 - optimized pm time/resource allocation through the automation of self-checkout metric extraction by querying 4 databases  
 
-### **georgia institute of technology** | math 1711 teaching assistant |  *august 2022 – may 2023*  
+### **georgia institute of technology** | math 1711 teaching assistant |  august 2022 – may 2023 
 - independently led biweekly classes of 25-30 students about the fundamental concepts of probability and matrix algebra  
 - constructed a positive, growth-focused environment where students felt comfortable engaging daily and asking questions  
 - provided educational materials like daily lesson plans and weekly homework packets that averaged a 97% completion rate  
 
-### **carpathian foundation** | funding and strategy intern |  *june 2022 – july 2022*  
+### **carpathian foundation** | funding and strategy intern |  june 2022 – july 2022* 
 - initiated impact measurement by creating a detailed report and presentation for the emergency response fund for ukraine  
 - crafted a long-term marketing and outreach plan with over 20 fundraising suggestions/ideas to aid in sustainable practices  
 - improved the foundation’s western visibility and relationships by proofreading and rewriting 8 grant-related documents  
