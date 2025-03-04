@@ -32,7 +32,7 @@ layout: page
 - constructed a positive, growth-focused environment where students felt comfortable engaging daily and asking questions  
 - provided educational materials like daily lesson plans and weekly homework packets that averaged a 97% completion rate  
 
-### **carpathian foundation** | funding and strategy intern |  june 2022 – july 2022* 
+### **carpathian foundation** | funding and strategy intern |  june 2022 – july 2022
 - initiated impact measurement by creating a detailed report and presentation for the emergency response fund for ukraine  
 - crafted a long-term marketing and outreach plan with over 20 fundraising suggestions/ideas to aid in sustainable practices  
 - improved the foundation’s western visibility and relationships by proofreading and rewriting 8 grant-related documents  
