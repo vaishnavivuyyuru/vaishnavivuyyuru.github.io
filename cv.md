@@ -6,10 +6,10 @@ layout: page
 
 ## education
 **georgia institute of technology, scheller college of business:** (august 2021 – may 2025)  
-bachelor of science in business administration | **gpa:** 3.98/4.00  
-**concentration:** information technology management, business analytics  
-**minor:** leadership studies  
-**honors:** zell miller scholarship, john r. battle award for student excellence, faculty honors, dean’s list
+- bachelor of science in business administration | **gpa:** 3.98/4.00  
+- **concentration:** information technology management, business analytics  
+- **minor:** leadership studies  
+- **honors:** zell miller scholarship, john r. battle award for student excellence, faculty honors, dean’s list
 
 ## experience
 ### **wheelchariot** | social impact intern |  *january 2025 – april 2025*
