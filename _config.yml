@@ -16,7 +16,7 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "aboutme", title: "About"}
+  - {file: "README.md", title: "About"}
   - {url: "https://vaishnavivuyyuru.github.io/files/Vaishnavi_(Navi)_Vuyyuru_CV.pdf", title: "CV"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
