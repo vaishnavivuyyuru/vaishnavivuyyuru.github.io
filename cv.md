@@ -1,5 +1,5 @@
 ---
-title: "vaishnavi vuyyuru's CV"
+title: "vaishnavi vuyyuru's cv"
 permalink: "/cv/"
 layout: page
 ---
