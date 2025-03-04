@@ -12,12 +12,12 @@ bachelor of science in business administration | **gpa:** 3.98/4.00
 **honors:** zell miller scholarship, john r. battle award for student excellence, faculty honors, dean’s list
 
 ## experience
-### **wheelchariot** | social impact intern | *january 2025 – april 2025*
+### **wheelchariot** | social impact intern |  *january 2025 – april 2025*
 - researched & compiled detailed documents on 10+ potential partner organizations, expanding the disability-focused network
 - created a strategic content calendar and designed 12 social media posts with inclusive captions to boost audience engagement
 - strengthened relationships and increased engagement by sending 30+ personal emails to professors and community partners
 
-### **kpmg** | firmwide analytics intern | *june 2024 – august 2024*
+### **kpmg** | firmwide analytics intern |  *june 2024 – august 2024*
 - enhanced data harvesting ml/ai platform via qa testing/bug detection, saving 3-6 weeks in data extraction time for users
 - developed supplemental salesforce dashboard framing to assist in evaluating client-facing opportunities for 100+ partners
 - refined deal advisory llm via randomized testing so gpt model accurately interprets 700+ lines of public relations data
