@@ -38,17 +38,17 @@ layout: page
 - improved the foundation’s western visibility and relationships by proofreading and rewriting 8 grant-related documents  
 
 ## projects
-### **telecom customer behavior model** | data science workflow project 
+### **telecom customer behavior model** | data science workflow project | january 2024 – may 2024
 - used pandas & seaborn to identify customer behavior patterns in relation to churn/loyalty behavior in the telecom industry
 - normalized dataframes & performed one-hot encoding on 7000+ lines to enhance predictive accuracy in ml algorithms
 - created a prediction model of customer churn using binary logistic regression & tested model accuracy with a confusion matrix
 
-### **zipcar system design** | software system design & implementation project
+### **zipcar system design** | software system design & implementation project | january 2024 – may 2024
 - evaluated zipcar user requirements to create necessary er-diagrams and relational schema to support all user requirements  
 - developed a database and 30+ sql queries to answer common business questions about client details and car optimization  
 - established a framework to extract, transform, and load applicable activity to implement the use of the data warehouse  
 
-### **spotify hits predictor** | linear regression project
+### **spotify hits predictor** | linear regression project | august 2023 – december 2023
 - analyzed variables affecting the musicality of past popular songs in rstudio to forecast future spotify streaming performance
 - created regression models and decision trees using r to analyze p-values & determine if models are statistically significant
 - simplified the process of utilizing streaming variables in rstudio by using excel to appropriately aggregate & clean data
