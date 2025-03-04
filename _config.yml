@@ -17,7 +17,7 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md", title: "About"}
-  - {url: "https://vaishnavivuyyuru.github.io/files/Vaishnavi_(Navi)_Vuyyuru_CV.pdf", title: "CV"}
+  - {file: "CV.html", title: "CV"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: mail, icon: envelope, url: "mailto:vvuyyuru3@gatech.edu"}
