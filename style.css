@@ -1,23 +1,27 @@
 :root{
-  /* Base: warm stone / parchment (more premium than yellow) */
-  --bg: #f3efe7;          /* warm stone */
-  --panel: #fbfaf6;       /* clean parchment */
-  --text: #123126;        /* deep green-black */
-  --muted: #4f6b5c;       /* sage-gray */
-  --line: rgba(18,49,38,.14);
+  /* ===== Palette inspired by your images ===== */
+  --bg: #F0EAD8;          /* Almond Cream */
+  --panel: #F7F3E7;       /* lighter almond */
+  --panel2: #FBF8F1;      /* clean paper highlight */
 
-  /* Accents: grounded + slightly technical */
-  --accent: #1f5b43;      /* evergreen */
-  --accent2: #c2654a;     /* terracotta (controlled) */
-  --accent3: #355e7c;     /* muted blue (technical) */
-  --accent4: #b99a62;     /* warm brass */
+  --text: #1F2E26;        /* deep green-black (professional) */
+  --muted: #4D6A60;       /* sage ink */
+  --line: rgba(31,46,38,.14);
 
-  --shadow: 0 22px 55px rgba(12, 14, 12, .12);
-  --shadowSoft: 0 14px 35px rgba(12, 14, 12, .10);
+  --sage: #99ABA6;        /* Coastal Sage */
+  --mist: #ACB090;        /* Meadow Mist */
+  --olive: #6F6C43;       /* Olive Grove */
+  --earth: #5E4B3B;       /* Earth Brown */
+
+  --terra: #C97A55;       /* terracotta accent (warm but controlled) */
+  --sky: #7FA3A1;         /* muted teal/sky for a technical hint */
+
+  --shadow: 0 22px 55px rgba(18, 16, 14, .14);
+  --shadowSoft: 0 14px 35px rgba(18, 16, 14, .11);
   --radius: 22px;
   --radiusSm: 14px;
 
-  /* Typography: editorial display + clean sans */
+  /* Typography: editorial display + clean sans (no external fonts needed) */
   --fontSans: ui-sans-serif, system-ui, -apple-system, "Inter", Segoe UI, Roboto, Helvetica, Arial;
   --fontDisplay: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Garamond, Georgia, serif;
 }
@@ -30,23 +34,24 @@ body{
   font-family: var(--fontSans);
   color:var(--text);
 
-  /* Layered background: warm stone + technical depth */
+  /* ===== Layered background: warm stone + sage/olive depth + subtle “technical” teal ===== */
   background:
-    radial-gradient(1200px 720px at 12% 0%, rgba(185,154,98,.18), transparent 62%),
-    radial-gradient(900px 560px at 85% 10%, rgba(194,101,74,.12), transparent 62%),
-    radial-gradient(980px 680px at 55% 88%, rgba(53,94,124,.10), transparent 66%),
-    radial-gradient(800px 520px at 30% 60%, rgba(31,91,67,.08), transparent 68%),
-    linear-gradient(180deg, rgba(255,255,255,.55), rgba(255,255,255,0) 42%),
+    radial-gradient(1100px 700px at 12% 0%, rgba(153,171,166,.26), transparent 62%),
+    radial-gradient(900px 560px at 88% 10%, rgba(201,122,85,.14), transparent 62%),
+    radial-gradient(1000px 720px at 60% 92%, rgba(172,176,144,.22), transparent 66%),
+    radial-gradient(900px 600px at 30% 60%, rgba(111,108,67,.18), transparent 68%),
+    radial-gradient(900px 560px at 78% 58%, rgba(127,163,161,.12), transparent 70%),
+    linear-gradient(180deg, rgba(255,255,255,.52), rgba(255,255,255,0) 42%),
     var(--bg);
 }
 
-/* Subtle paper + grain overlay (keeps complexity, stays professional) */
+/* ===== Subtle paper texture + grain (professional, not noisy) ===== */
 body::before{
   content:"";
   position:fixed;
   inset:0;
   pointer-events:none;
-  opacity:.07;
+  opacity:.075;
   mix-blend-mode:multiply;
   background-image:
     repeating-linear-gradient(0deg, rgba(0,0,0,.05) 0px, rgba(0,0,0,.05) 1px, transparent 1px, transparent 3px),
@@ -56,6 +61,7 @@ body::before{
 /* ---------- text ---------- */
 
 a{ color:inherit; text-decoration:none; }
+
 p{
   line-height:1.7;
   color:var(--muted);
@@ -72,19 +78,19 @@ h1{
   font-weight: 650;
   font-size: clamp(44px, 6vw, 72px);
   line-height:1.02;
-  color: rgba(18,49,38,.98);
+  color: rgba(31,46,38,.98);
 }
 
 h2{
   font-family: var(--fontSans);
-  font-weight: 700;
+  font-weight: 750;
   font-size: 28px;
-  color: rgba(18,49,38,.98);
+  color: rgba(31,46,38,.98);
 }
 
 h3{
   font-family: var(--fontSans);
-  font-weight: 700;
+  font-weight: 750;
   font-size: 18px;
 }
 
@@ -94,8 +100,8 @@ h3{
   position:sticky;
   top:0;
   z-index:50;
-  border-bottom:1px solid rgba(18,49,38,.10);
-  background: rgba(243,239,231,.78);
+  border-bottom:1px solid rgba(31,46,38,.10);
+  background: rgba(240,234,216,.78);
   backdrop-filter: blur(12px);
 }
 
@@ -110,7 +116,7 @@ h3{
 }
 
 .brand{
-  font-weight:700;
+  font-weight:750;
   font-size:18px;
   letter-spacing:.01em;
 }
@@ -123,10 +129,11 @@ h3{
 
 .links a{
   font-size:14px;
-  color: rgba(79,107,92,.95);
+  color: rgba(77,106,96,.95);
   position:relative;
 }
 
+/* underline becomes “sage → olive → teal” = creative + technical */
 .links a::after{
   content:"";
   position:absolute;
@@ -134,54 +141,51 @@ h3{
   bottom:-8px;
   height:2px;
   width:0%;
-  background: linear-gradient(90deg, var(--accent), var(--accent3));
+  background: linear-gradient(90deg, rgba(153,171,166,.95), rgba(111,108,67,.85), rgba(127,163,161,.85));
   border-radius:999px;
   transition: width .18s ease;
 }
 
-.links a:hover{
-  color: rgba(18,49,38,.98);
-}
-.links a:hover::after{
-  width:100%;
-}
+.links a:hover{ color: rgba(31,46,38,.98); }
+.links a:hover::after{ width:100%; }
 
 /* ---------- buttons ---------- */
 
 .btn{
-  border:1px solid rgba(18,49,38,.18);
+  border:1px solid rgba(31,46,38,.18);
   padding: 10px 14px;
   border-radius:999px;
   font-size:14px;
-  background: rgba(255,255,255,.40);
+  background: rgba(251,248,241,.55);
   cursor:pointer;
   transition: transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
-  box-shadow: 0 10px 26px rgba(12,14,12,.06);
+  box-shadow: 0 10px 26px rgba(18,16,14,.07);
 }
 
 .btn:hover{
   transform: translateY(-1px);
-  box-shadow: 0 18px 36px rgba(12,14,12,.10);
-  border-color: rgba(18,49,38,.24);
+  box-shadow: 0 18px 36px rgba(18,16,14,.11);
+  border-color: rgba(31,46,38,.24);
 }
 
 .btn.primary{
   border:none;
   color:#fff;
   background:
-    linear-gradient(90deg, rgba(31,91,67,1), rgba(31,91,67,.92)),
-    radial-gradient(420px 240px at 20% 20%, rgba(185,154,98,.35), transparent 60%),
-    radial-gradient(420px 240px at 85% 45%, rgba(53,94,124,.22), transparent 60%);
-  box-shadow: 0 18px 44px rgba(31,91,67,.16);
+    linear-gradient(90deg, rgba(31,46,38,1), rgba(31,46,38,.92)),
+    radial-gradient(440px 260px at 20% 25%, rgba(153,171,166,.38), transparent 60%),
+    radial-gradient(440px 260px at 85% 55%, rgba(201,122,85,.20), transparent 60%),
+    radial-gradient(420px 240px at 55% 110%, rgba(127,163,161,.16), transparent 65%);
+  box-shadow: 0 18px 44px rgba(31,46,38,.18);
 }
 
 .btn.primary:hover{
   transform: translateY(-2px);
-  box-shadow: 0 22px 52px rgba(31,91,67,.20);
+  box-shadow: 0 22px 52px rgba(31,46,38,.22);
 }
 
 .btn.ghost{
-  background: rgba(255,255,255,.26);
+  background: rgba(251,248,241,.42);
 }
 
 /* ---------- hero ---------- */
@@ -202,7 +206,7 @@ h3{
   font-size:14px;
   letter-spacing:.06em;
   text-transform: lowercase;
-  color: rgba(79,107,92,.95);
+  color: rgba(77,106,96,.95);
   margin-bottom: 18px;
 }
 
@@ -211,14 +215,14 @@ h3{
   width:10px;
   height:10px;
   border-radius:50%;
-  background: radial-gradient(circle at 30% 30%, var(--accent4), var(--accent2));
-  box-shadow: 0 10px 22px rgba(194,101,74,.14);
+  background: radial-gradient(circle at 30% 30%, rgba(153,171,166,1), rgba(201,122,85,.9));
+  box-shadow: 0 10px 22px rgba(153,171,166,.16);
 }
 
 .sub{
   margin-top: 16px;
   font-size: 18px;
-  color: rgba(79,107,92,.98);
+  color: rgba(77,106,96,.98);
 }
 
 .hero-cta{
@@ -228,7 +232,7 @@ h3{
   margin-top: 24px;
 }
 
-/* “Now” strip (balanced: playful but clean) */
+/* “Now” strip */
 .now-strip{
   display:flex;
   gap:12px;
@@ -238,25 +242,25 @@ h3{
 
 .now-item{
   background:
-    linear-gradient(180deg, rgba(255,255,255,.62), rgba(255,255,255,.28)),
+    linear-gradient(180deg, rgba(255,255,255,.62), rgba(255,255,255,.22)),
     var(--panel);
-  border: 1px solid rgba(18,49,38,.14);
+  border: 1px solid rgba(31,46,38,.14);
   padding: 10px 14px;
   border-radius: var(--radiusSm);
   font-size: 14px;
-  color: rgba(79,107,92,.98);
-  box-shadow: 0 16px 34px rgba(12,14,12,.07);
+  color: rgba(77,106,96,.98);
+  box-shadow: 0 16px 34px rgba(18,16,14,.08);
   transition: transform .18s ease, box-shadow .18s ease;
 }
 
 .now-item:hover{
   transform: translateY(-2px);
-  box-shadow: 0 22px 44px rgba(12,14,12,.10);
+  box-shadow: 0 22px 44px rgba(18,16,14,.11);
 }
 
 .now-item span{
-  font-weight:700;
-  color: rgba(18,49,38,.98);
+  font-weight:750;
+  color: rgba(31,46,38,.98);
   margin-right:6px;
 }
 
@@ -289,9 +293,9 @@ h3{
 .card{
   position:relative;
   background:
-    linear-gradient(180deg, rgba(255,255,255,.58), rgba(255,255,255,.22)),
+    linear-gradient(180deg, rgba(255,255,255,.62), rgba(255,255,255,.18)),
     var(--panel);
-  border: 1px solid rgba(18,49,38,.14);
+  border: 1px solid rgba(31,46,38,.14);
   border-radius: var(--radius);
   padding: 22px;
   box-shadow: var(--shadowSoft);
@@ -299,16 +303,16 @@ h3{
   overflow:hidden;
 }
 
-/* quieter glow (more “grown-up”) */
+/* layered glow inside cards (sage/olive/teal = depth without childishness) */
 .card::before{
   content:"";
   position:absolute;
   inset:-1px;
   background:
-    radial-gradient(420px 240px at 15% 10%, rgba(185,154,98,.12), transparent 60%),
-    radial-gradient(460px 260px at 85% 18%, rgba(194,101,74,.08), transparent 62%),
-    radial-gradient(460px 280px at 55% 110%, rgba(53,94,124,.08), transparent 65%);
-  opacity:.85;
+    radial-gradient(420px 240px at 18% 8%, rgba(153,171,166,.16), transparent 60%),
+    radial-gradient(460px 260px at 90% 16%, rgba(111,108,67,.12), transparent 62%),
+    radial-gradient(520px 300px at 58% 120%, rgba(127,163,161,.10), transparent 66%);
+  opacity:.9;
   pointer-events:none;
 }
 
@@ -316,7 +320,7 @@ h3{
 
 .card:hover{
   transform: translateY(-5px);
-  border-color: rgba(18,49,38,.20);
+  border-color: rgba(31,46,38,.20);
   box-shadow: var(--shadow);
 }
 
@@ -329,7 +333,7 @@ h3{
 
 .meta{
   font-size:13px;
-  color: rgba(79,107,92,.95);
+  color: rgba(77,106,96,.95);
 }
 
 .desc{ margin-top:10px; }
@@ -337,7 +341,7 @@ h3{
 .bullets{
   padding-left:18px;
   margin-top:10px;
-  color: rgba(79,107,92,.98);
+  color: rgba(77,106,96,.98);
 }
 
 .bullets li{ margin: 6px 0; }
@@ -355,11 +359,11 @@ h3{
   font-size:12px;
   padding: 7px 10px;
   border-radius:999px;
-  border:1px solid rgba(18,49,38,.14);
+  border:1px solid rgba(31,46,38,.14);
   background:
-    linear-gradient(180deg, rgba(255,255,255,.62), rgba(255,255,255,.18));
-  color: rgba(79,107,92,.95);
-  box-shadow: 0 10px 24px rgba(12,14,12,.05);
+    linear-gradient(180deg, rgba(255,255,255,.66), rgba(255,255,255,.14));
+  color: rgba(77,106,96,.95);
+  box-shadow: 0 10px 24px rgba(18,16,14,.06);
 }
 
 /* ---------- projects ---------- */
@@ -373,9 +377,9 @@ h3{
 .tile{
   position:relative;
   background:
-    linear-gradient(180deg, rgba(255,255,255,.56), rgba(255,255,255,.18)),
+    linear-gradient(180deg, rgba(255,255,255,.60), rgba(255,255,255,.14)),
     var(--panel);
-  border: 1px solid rgba(18,49,38,.14);
+  border: 1px solid rgba(31,46,38,.14);
   border-radius: var(--radius);
   overflow:hidden;
   box-shadow: var(--shadowSoft);
@@ -384,7 +388,7 @@ h3{
 
 .tile:hover{
   transform: translateY(-6px);
-  border-color: rgba(18,49,38,.20);
+  border-color: rgba(31,46,38,.20);
   box-shadow: var(--shadow);
 }
 
@@ -392,41 +396,40 @@ h3{
   height: 220px;
   position:relative;
 
-  /* more neutral, less “kids craft paper” */
+  /* neutral “stone” thumbnail field with layered hues */
   background:
-    radial-gradient(560px 260px at 25% 18%, rgba(185,154,98,.16), transparent 62%),
-    radial-gradient(540px 260px at 85% 40%, rgba(53,94,124,.10), transparent 64%),
-    linear-gradient(180deg, rgba(18,49,38,.06), rgba(18,49,38,.01)),
-    rgba(233,228,218,.85);
+    radial-gradient(560px 280px at 22% 18%, rgba(153,171,166,.22), transparent 62%),
+    radial-gradient(520px 260px at 88% 34%, rgba(111,108,67,.16), transparent 64%),
+    radial-gradient(520px 260px at 62% 96%, rgba(127,163,161,.12), transparent 66%),
+    linear-gradient(180deg, rgba(31,46,38,.06), rgba(31,46,38,.01)),
+    rgba(233,229,218,.92);
 
   display:flex;
   align-items:center;
   justify-content:center;
-  border-bottom: 1px solid rgba(18,49,38,.12);
+  border-bottom: 1px solid rgba(31,46,38,.12);
 }
 
 .thumb-placeholder{
-  border: 1px dashed rgba(18,49,38,.22);
+  border: 1px dashed rgba(31,46,38,.22);
   padding: 12px 16px;
   border-radius: 12px;
   font-size: 13px;
-  color: rgba(79,107,92,.95);
-  background: rgba(255,255,255,.34);
+  color: rgba(77,106,96,.95);
+  background: rgba(251,248,241,.42);
 }
 
-/* subtle “shine” on hover */
+/* subtle “shine” */
 .thumb::after{
   content:"";
   position:absolute;
   inset:0;
   background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,.30) 35%, transparent 70%);
-  opacity:.16;
+  opacity:.15;
   transform: translateX(-30%);
   transition: transform .35s ease;
 }
-.tile:hover .thumb::after{
-  transform: translateX(25%);
-}
+.tile:hover .thumb::after{ transform: translateX(25%); }
 
 .tile-body{
   padding: 18px 18px 20px;
@@ -445,9 +448,9 @@ h3{
 
 .panel{
   background:
-    linear-gradient(180deg, rgba(255,255,255,.58), rgba(255,255,255,.20)),
+    linear-gradient(180deg, rgba(255,255,255,.62), rgba(255,255,255,.16)),
     var(--panel);
-  border: 1px solid rgba(18,49,38,.14);
+  border: 1px solid rgba(31,46,38,.14);
   border-radius: var(--radius);
   padding: 22px;
   box-shadow: var(--shadowSoft);
@@ -456,7 +459,7 @@ h3{
 .list{
   margin:0;
   padding-left:18px;
-  color: rgba(79,107,92,.98);
+  color: rgba(77,106,96,.98);
 }
 .list li{ margin: 7px 0; }
 
@@ -469,28 +472,28 @@ h3{
 .photo{
   aspect-ratio: 1/1;
   border-radius: 16px;
-  border: 1px solid rgba(18,49,38,.14);
+  border: 1px solid rgba(31,46,38,.14);
   background:
-    radial-gradient(380px 160px at 35% 25%, rgba(194,101,74,.08), transparent 62%),
-    radial-gradient(360px 180px at 80% 70%, rgba(31,91,67,.08), transparent 62%),
-    rgba(233,228,218,.85);
+    radial-gradient(380px 160px at 35% 25%, rgba(201,122,85,.10), transparent 62%),
+    radial-gradient(360px 180px at 80% 70%, rgba(153,171,166,.14), transparent 62%),
+    rgba(233,229,218,.92);
   display:flex;
   align-items:center;
   justify-content:center;
-  color: rgba(79,107,92,.95);
-  box-shadow: 0 16px 34px rgba(12,14,12,.07);
+  color: rgba(77,106,96,.95);
+  box-shadow: 0 16px 34px rgba(18,16,14,.08);
   transition: transform .18s ease, box-shadow .18s ease;
 }
 
 .photo:hover{
   transform: translateY(-3px) rotate(-.15deg);
-  box-shadow: 0 22px 44px rgba(12,14,12,.10);
+  box-shadow: 0 22px 44px rgba(18,16,14,.11);
 }
 
 .hint{
   margin-top: 10px;
   font-size: 13px;
-  color: rgba(79,107,92,.90);
+  color: rgba(77,106,96,.90);
 }
 
 /* ---------- contact ---------- */
@@ -507,8 +510,8 @@ h3{
   max-width:1120px;
   margin:0 auto;
   padding: 46px 22px 84px;
-  border-top: 1px solid rgba(18,49,38,.10);
-  color: rgba(79,107,92,.90);
+  border-top: 1px solid rgba(31,46,38,.10);
+  color: rgba(77,106,96,.90);
 }
 
 /* ---------- responsive ---------- */
