@@ -3,295 +3,381 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>vaishnavi vuyyuru</title>
-  <meta name="description" content="vaishnavi's creative corner" />
+  <title>Vaishnavi Vuyyuru</title>
+  <meta name="description" content="A warm little corner for photos, pottery, books, playlists, and travel — by Vaishnavi Vuyyuru." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- NAV -->
+  <!-- top -->
+  <a class="skip" href="#main">Skip to content</a>
+
   <header class="nav">
     <div class="nav-inner">
-      <a class="brand" href="#top">vaishnavi vuyyuru</a>
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">vaishnavi vuyyuru</span>
+      </a>
 
-      <nav class="links">
-        <a href="#interests">interests</a>
-        <a href="#academic">academic</a>
-        <a href="#work">work</a>
-        <a href="#projects">projects</a>
-        <a href="#contact">contact</a>
-        <a class="pill" href="assets/Vaishnavi_Vuyyuru_CV.pdf" target="_blank" rel="noreferrer">CV</a>
+      <nav class="links" aria-label="Primary">
+        <a href="#gallery">photos</a>
+        <a href="#pottery">pottery</a>
+        <a href="#reads">books + articles</a>
+        <a href="#listen">music</a>
+        <a href="#travel">travel</a>
+        <a href="#contact" class="pill">hello</a>
+        <a href="about.html" class="pill pill-ghost">about</a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
+  <main id="main">
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="top">
       <div class="hero-inner">
-        <p class="kicker">vaishnavi (/vī-shna-vee/)</p>
+        <div class="hero-copy">
+          <p class="kicker">
+            <span class="dot" aria-hidden="true"></span>
+            hi — i'm navi <span class="pronounce">(/vī-shna-vee/)</span>
+          </p>
 
-        <h1 class="hero-title">
-          come take a peek
-          <span class="hero-accent">at what i'm up to</span>
-          and what's going on in my world.
-        </h1>
+          <h1>
+            come take a peek at what i’m making, collecting, and getting inspired by.
+          </h1>
 
-        <div class="hero-links">
-          <a class="text-link" href="#interests">→ hobbies & interests</a>
-          <a class="text-link" href="#academic">→ go jackets!</a>
-          <a class="text-link" href="#work">→ how i work</a>
-          <a class="text-link" href="#contact">→ say hi</a>
+          <p class="hero-blurb">
+            this is my cozy corner of the internet: photos, pottery experiments, books i’m annotating,
+            songs i’m looping, and little travel moments i don’t want to forget.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-warm" href="#gallery">start with photos</a>
+            <a class="btn btn-cream" href="#pottery">see what i’m making</a>
+            <a class="btn btn-cream" href="#listen">press play</a>
+          </div>
+
+          <div class="now-row" role="list" aria-label="Now notes">
+            <div class="now" role="listitem">
+              <span class="now-label">now</span>
+              <span class="now-text">building a calmer, warmer personal site (and actually finishing it)</span>
+            </div>
+            <div class="now" role="listitem">
+              <span class="now-label">lately</span>
+              <span class="now-text">pottery + playlists + travel planning + photo walks</span>
+            </div>
+            <div class="now" role="listitem">
+              <span class="now-label">always</span>
+              <span class="now-text">books, good lighting, and a little organized chaos</span>
+            </div>
+          </div>
         </div>
 
-        <div class="mini-badges">
-          <span class="mini"><strong>now</strong> finishing my master’s + making portfolio pieces</span>
-          <span class="mini"><strong>building</strong> forecasting + optimization tools</span>
-          <span class="mini"><strong>offline</strong> pottery, photography, playlists</span>
+        <!-- collage -->
+        <div class="hero-collage" aria-label="Warm collage preview">
+          <div class="polaroid p1">
+            <div class="ph">
+              <span>add a photo</span>
+            </div>
+            <p>soft light &amp; quiet mornings</p>
+          </div>
+
+          <div class="polaroid p2">
+            <div class="ph">
+              <span>add a photo</span>
+            </div>
+            <p>studio days (aka: clay everywhere)</p>
+          </div>
+
+          <div class="polaroid p3">
+            <div class="ph">
+              <span>add a photo</span>
+            </div>
+            <p>bookshelf finds</p>
+          </div>
+
+          <div class="stamp" aria-hidden="true">
+            <span>✿</span>
+            <span>cozy</span>
+            <span>✿</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- PLAY / INTERESTS (FOCAL POINT) -->
-    <section class="section" id="play">
+    <!-- QUICK LINKS / INTERESTS -->
+    <section class="section" aria-label="Interests">
       <div class="section-head">
-        <h2>play</h2>
-        <p>the stuff that keeps me curious, creative, and grounded.</p>
+        <h2>what you’ll find here</h2>
+        <p>a little menu of my current obsessions.</p>
       </div>
 
-      <div class="play-grid">
-        <article class="play-card">
-          <h3>currently into</h3>
-          <ul class="list">
-            <li>📷 photography (little moments, texture, light)</li>
-            <li>🏺 pottery (slow design, messy iteration)</li>
-            <li>💃 dance + performance</li>
-            <li>🎧 playlists + music rabbit holes</li>
-            <li>📚 reading queue (story + strategy)</li>
-          </ul>
-          <div class="chip-row">
-            <span class="chip">texture</span>
-            <span class="chip">rhythm</span>
-            <span class="chip">systems</span>
-            <span class="chip">story</span>
+      <div class="interest-grid">
+        <a class="interest-card" href="#gallery">
+          <div class="ic-top">
+            <span class="ic-icon" aria-hidden="true">📷</span>
+            <span class="ic-title">photos</span>
           </div>
-        </article>
+          <p class="ic-desc">light, textures, tiny moments. (i’ll rotate a mini gallery here.)</p>
+          <span class="ic-tag">film-ish · warm · candid</span>
+        </a>
 
-        <article class="play-card">
-          <h3>little gallery</h3>
-          <p class="muted">optional: add 6 photos you love. (could be film photos, pottery, anything.)</p>
-
-          <div class="photo-grid">
-            <div class="photo ph">add</div>
-            <div class="photo ph">add</div>
-            <div class="photo ph">add</div>
-            <div class="photo ph">add</div>
-            <div class="photo ph">add</div>
-            <div class="photo ph">add</div>
+        <a class="interest-card" href="#pottery">
+          <div class="ic-top">
+            <span class="ic-icon" aria-hidden="true">🏺</span>
+            <span class="ic-title">pottery</span>
           </div>
+          <p class="ic-desc">what i’m throwing, glazing, and learning (aka failing cutely).</p>
+          <span class="ic-tag">hands-on · slow craft</span>
+        </a>
 
-          <p class="hint">Tip: replace each “add” with an <code>&lt;img&gt;</code> from <code>/assets</code>.</p>
-        </article>
-
-        <article class="play-card wide">
-          <h3>a few things i’m always collecting</h3>
-          <div class="two-col">
-            <div class="soft-box">
-              <p class="soft-title">things that inspire me</p>
-              <ul class="list">
-                <li>type + editorial layouts</li>
-                <li>earthy palettes + soft light</li>
-                <li>interfaces that feel calm</li>
-                <li>tiny tools that save people time</li>
-              </ul>
-            </div>
-
-            <div class="soft-box">
-              <p class="soft-title">things i like making</p>
-              <ul class="list">
-                <li>dashboards with personality</li>
-                <li>small prototypes + experiments</li>
-                <li>systems that don’t feel scary</li>
-                <li>stories from data (without the jargon)</li>
-              </ul>
-            </div>
+        <a class="interest-card" href="#reads">
+          <div class="ic-top">
+            <span class="ic-icon" aria-hidden="true">📚</span>
+            <span class="ic-title">books + articles</span>
           </div>
-        </article>
+          <p class="ic-desc">my reading queue + a few “you have to read this” links.</p>
+          <span class="ic-tag">notes · highlights · favorites</span>
+        </a>
+
+        <a class="interest-card" href="#listen">
+          <div class="ic-top">
+            <span class="ic-icon" aria-hidden="true">🎧</span>
+            <span class="ic-title">music</span>
+          </div>
+          <p class="ic-desc">songs on repeat + playlists for different moods.</p>
+          <span class="ic-tag">spotify · cozy · drive</span>
+        </a>
+
+        <a class="interest-card" href="#travel">
+          <div class="ic-top">
+            <span class="ic-icon" aria-hidden="true">🧳</span>
+            <span class="ic-title">travel</span>
+          </div>
+          <p class="ic-desc">small recaps, photos, and “would go again” places.</p>
+          <span class="ic-tag">itineraries · food · walking</span>
+        </a>
+
+        <a class="interest-card" href="about.html">
+          <div class="ic-top">
+            <span class="ic-icon" aria-hidden="true">🧠</span>
+            <span class="ic-title">about</span>
+          </div>
+          <p class="ic-desc">a high-level overview of school + work (kept tidy over there).</p>
+          <span class="ic-tag">academic · professional</span>
+        </a>
       </div>
     </section>
 
-    <!-- SCHOOL (CREDENTIALS, HIGH LEVEL) -->
-    <section class="section" id="school">
+    <!-- PHOTO GALLERY -->
+    <section class="section" id="gallery">
       <div class="section-head">
-        <h2>school</h2>
-        <p>quick snapshot — enough to signal credibility, not overwhelm.</p>
+        <h2>photos</h2>
+        <p>a little grid — swap these placeholders with your own images.</p>
       </div>
 
-      <div class="cards one-two">
-        <article class="card">
-          <div class="card-top">
-            <h3>georgia tech</h3>
-            <p class="meta">atlanta, ga</p>
-          </div>
-
-          <p class="desc">
-            <strong>m.s. analytics</strong> (computational + business) · expected 2026
-            <br />
-            <strong>b.s. business administration</strong> (it management + business analytics) · expected 2025
-          </p>
-
-          <ul class="bullets">
-            <li>work i love: modeling, optimization, experimentation, storytelling</li>
-            <li>i’m drawn to product problems — especially revenue/ops + human-centered tools</li>
-          </ul>
-
-          <div class="chip-row">
-            <span class="chip">python</span>
-            <span class="chip">sql</span>
-            <span class="chip">tableau</span>
-            <span class="chip">optimization</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
-            <h3>what i’m learning right now</h3>
-            <p class="meta">themes, not classes</p>
-          </div>
-
-          <div class="stack">
-            <div class="stack-item">
-              <p class="stack-k">forecasting</p>
-              <p class="stack-v">thinking in time, uncertainty, and practical decision-making</p>
-            </div>
-            <div class="stack-item">
-              <p class="stack-k">experimentation</p>
-              <p class="stack-v">asking better questions + measuring what actually changed</p>
-            </div>
-            <div class="stack-item">
-              <p class="stack-k">optimization</p>
-              <p class="stack-v">constraints, tradeoffs, and “good choices at scale”</p>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- WORK (HIGH-LEVEL SUMMARY, NOT EXPERIENCE LIST) -->
-    <section class="section" id="work">
-      <div class="section-head">
-        <h2>work</h2>
-        <p>high-level: how i show up + what i’m strong at.</p>
+      <div class="gallery">
+        <!-- Replace each .frame content with: <img src="assets/photo-01.jpg" alt="..." loading="lazy" /> -->
+        <div class="frame"><div class="frame-ph">add photo</div></div>
+        <div class="frame tall"><div class="frame-ph">add photo</div></div>
+        <div class="frame"><div class="frame-ph">add photo</div></div>
+        <div class="frame wide"><div class="frame-ph">add photo</div></div>
+        <div class="frame"><div class="frame-ph">add photo</div></div>
+        <div class="frame"><div class="frame-ph">add photo</div></div>
       </div>
 
-      <div class="work-grid">
-        <article class="work-card">
-          <h3>i turn ambiguity into a plan</h3>
-          <p class="muted">
-            i like messy problems. i map what matters, define success, and build something people can use.
-          </p>
-          <div class="chip-row">
-            <span class="chip">product thinking</span>
-            <span class="chip">scoping</span>
-            <span class="chip">prioritization</span>
-          </div>
-        </article>
-
-        <article class="work-card">
-          <h3>i’m analytical — but human about it</h3>
-          <p class="muted">
-            i care about clarity: clean metrics, honest assumptions, and stories that make decisions easier.
-          </p>
-          <div class="chip-row">
-            <span class="chip">modeling</span>
-            <span class="chip">dashboards</span>
-            <span class="chip">storytelling</span>
-          </div>
-        </article>
-
-        <article class="work-card">
-          <h3>i like systems + operations</h3>
-          <p class="muted">
-            i’m drawn to revenue/ops problems — optimization, process design, and small tools that remove friction.
-          </p>
-          <div class="chip-row">
-            <span class="chip">ops</span>
-            <span class="chip">revenue</span>
-            <span class="chip">optimization</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- PROJECTS (SMALL, OPTIONAL) -->
-    <section class="section" id="projects">
-      <div class="section-head">
-        <h2>projects</h2>
-        <p>mostly school + curiosity. here if you want receipts.</p>
-      </div>
-
-      <div class="grid">
-        <a class="tile" href="#" target="_blank" rel="noreferrer">
-          <div class="thumb"><div class="thumb-placeholder">add image</div></div>
-          <div class="tile-body">
-            <h3>retail revenue forecasting</h3>
-            <p class="tile-desc">time-series + ML models to forecast demand and improve planning decisions.</p>
-            <div class="chip-row">
-              <span class="chip">forecasting</span>
-              <span class="chip">xgboost</span>
-              <span class="chip">validation</span>
-            </div>
-          </div>
-        </a>
-
-        <a class="tile" href="#" target="_blank" rel="noreferrer">
-          <div class="thumb"><div class="thumb-placeholder">add image</div></div>
-          <div class="tile-body">
-            <h3>pricing + markdown optimization</h3>
-            <p class="tile-desc">modeled demand response + timing to support revenue-maximizing decisions.</p>
-            <div class="chip-row">
-              <span class="chip">optimization</span>
-              <span class="chip">regression</span>
-              <span class="chip">revenue</span>
-            </div>
-          </div>
-        </a>
-
-        <a class="tile" href="#" target="_blank" rel="noreferrer">
-          <div class="thumb"><div class="thumb-placeholder">add image</div></div>
-          <div class="tile-body">
-            <h3>life expectancy + health disparities</h3>
-            <p class="tile-desc">county-level models to understand longevity drivers and policy levers.</p>
-            <div class="chip-row">
-              <span class="chip">modeling</span>
-              <span class="chip">equity</span>
-              <span class="chip">storytelling</span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <p class="tiny-note">
-        if you’re more interested in who i am than what i built in class, scroll back up — that’s the point.
+      <p class="hint">
+        Tip: put images in <code>/assets</code> and replace a placeholder with:
+        <code>&lt;img src="assets/yourfile.jpg" alt="describe it" loading="lazy"&gt;</code>
       </p>
+    </section>
+
+    <!-- POTTERY -->
+    <section class="section" id="pottery">
+      <div class="section-head">
+        <h2>pottery</h2>
+        <p>what i’m making + what i’m learning.</p>
+      </div>
+
+      <div class="two-col">
+        <div class="paper">
+          <h3>currently working on</h3>
+          <ul class="cozy-list">
+            <li><strong>mugs:</strong> comfy handles + earthy glazes</li>
+            <li><strong>small bowls:</strong> the “everyday snack bowl” shape</li>
+            <li><strong>test tiles:</strong> chasing the perfect warm olive</li>
+          </ul>
+
+          <div class="mini-note">
+            <span class="mini-title">tiny note</span>
+            <p>
+              i like documenting the process (even when it’s messy) —
+              because that’s where the fun is.
+            </p>
+          </div>
+        </div>
+
+        <div class="paper">
+          <h3>mini gallery</h3>
+          <div class="mini-gallery">
+            <div class="mini"><span>add</span></div>
+            <div class="mini"><span>add</span></div>
+            <div class="mini"><span>add</span></div>
+            <div class="mini"><span>add</span></div>
+          </div>
+          <p class="hint">Replace each “add” with an <code>&lt;img&gt;</code> from your pottery photos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- READS -->
+    <section class="section" id="reads">
+      <div class="section-head">
+        <h2>books + favorite articles</h2>
+        <p>things i’m reading or saving for later.</p>
+      </div>
+
+      <div class="shelf">
+        <div class="shelf-card">
+          <h3>books i’m into</h3>
+          <ul class="link-list">
+            <li><span class="bullet" aria-hidden="true"></span><span>Book title — why i loved it</span></li>
+            <li><span class="bullet" aria-hidden="true"></span><span>Book title — vibe / takeaway</span></li>
+            <li><span class="bullet" aria-hidden="true"></span><span>Book title — favorite quote</span></li>
+          </ul>
+          <p class="hint">Replace with your real titles (you can add links too).</p>
+        </div>
+
+        <div class="shelf-card">
+          <h3>articles i recommend</h3>
+          <ul class="link-list">
+            <li>
+              <span class="bullet" aria-hidden="true"></span>
+              <a href="#" target="_blank" rel="noreferrer">Article title</a>
+              <span class="muted">— 1 sentence on why it’s worth reading</span>
+            </li>
+            <li>
+              <span class="bullet" aria-hidden="true"></span>
+              <a href="#" target="_blank" rel="noreferrer">Article title</a>
+              <span class="muted">— what i learned / saved</span>
+            </li>
+            <li>
+              <span class="bullet" aria-hidden="true"></span>
+              <a href="#" target="_blank" rel="noreferrer">Article title</a>
+              <span class="muted">— “keep this forever”</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTEN -->
+    <section class="section" id="listen">
+      <div class="section-head">
+        <h2>music</h2>
+        <p>songs + playlists that match my week.</p>
+      </div>
+
+      <div class="music-grid">
+        <div class="tape">
+          <h3>on repeat</h3>
+          <ul class="chip-list">
+            <li class="chip">Song — Artist</li>
+            <li class="chip">Song — Artist</li>
+            <li class="chip">Song — Artist</li>
+            <li class="chip">Song — Artist</li>
+          </ul>
+          <p class="hint">Swap these with your actual “on repeat” list.</p>
+        </div>
+
+        <div class="tape">
+          <h3>playlists</h3>
+          <div class="playlist-list">
+            <a class="playlist" href="#" target="_blank" rel="noreferrer">
+              <span class="pl-name">warm morning</span>
+              <span class="pl-meta">spotify link</span>
+            </a>
+            <a class="playlist" href="#" target="_blank" rel="noreferrer">
+              <span class="pl-name">drive at dusk</span>
+              <span class="pl-meta">spotify link</span>
+            </a>
+            <a class="playlist" href="#" target="_blank" rel="noreferrer">
+              <span class="pl-name">focus but make it cozy</span>
+              <span class="pl-meta">spotify link</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAVEL -->
+    <section class="section" id="travel">
+      <div class="section-head">
+        <h2>travel</h2>
+        <p>little recaps + places i want to go back to.</p>
+      </div>
+
+      <div class="postcards">
+        <article class="postcard">
+          <div class="pc-top">
+            <h3>place / city</h3>
+            <span class="pc-date">month · year</span>
+          </div>
+          <p>1–2 sentences: what made it special (food, walk, museum, vibe).</p>
+          <ul class="pc-list">
+            <li>favorite meal:</li>
+            <li>best moment:</li>
+            <li>would do again:</li>
+          </ul>
+        </article>
+
+        <article class="postcard">
+          <div class="pc-top">
+            <h3>place / city</h3>
+            <span class="pc-date">month · year</span>
+          </div>
+          <p>tiny recap + a line about what you’d recommend.</p>
+          <ul class="pc-list">
+            <li>favorite spot:</li>
+            <li>unexpected joy:</li>
+            <li>next time:</li>
+          </ul>
+        </article>
+
+        <article class="postcard">
+          <div class="pc-top">
+            <h3>wishlist</h3>
+            <span class="pc-date">up next</span>
+          </div>
+          <p>places i’m daydreaming about (and why).</p>
+          <ul class="pc-list">
+            <li>city — reason</li>
+            <li>city — reason</li>
+            <li>city — reason</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
     <!-- CONTACT -->
     <section class="section" id="contact">
       <div class="section-head">
-        <h2>contact</h2>
-        <p>drop your links here.</p>
+        <h2>say hi</h2>
+        <p>quick links — and you can always use the about page for the “formal” stuff.</p>
       </div>
 
-      <div class="contact">
-        <a class="pill" href="mailto:vaishnavivuyyuru@gmail.com">email</a>
-        <a class="pill" href="https://www.linkedin.com/in/vaishnavivuyyuru/" target="_blank" rel="noreferrer">linkedin</a>
-        <a class="pill" href="https://www.tiktok.com/@7654v21" target="_blank" rel="noreferrer">tiktok</a>
+      <div class="contact-row">
+        <a class="btn btn-cream" href="mailto:vaishnavivuyyuru@gmail.com">email</a>
+        <a class="btn btn-cream" href="https://www.linkedin.com/in/vaishnavivuyyuru/" target="_blank" rel="noreferrer">linkedin</a>
+        <a class="btn btn-cream" href="https://www.tiktok.com/@7654v21" target="_blank" rel="noreferrer">tiktok</a>
+        <a class="btn btn-warm" href="about.html">about page</a>
       </div>
     </section>
 
     <footer class="footer">
-      <p>© <span id="year"></span> vaishnavi vuyyuru · built on github pages</p>
+      <div class="footer-inner">
+        <p>© <span id="year"></span> vaishnavi vuyyuru</p>
+        <p class="muted">built with cozy energy ✿</p>
+      </div>
     </footer>
   </main>
 
