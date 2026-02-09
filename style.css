@@ -824,3 +824,230 @@ code{
   *{ scroll-behavior:auto !important; }
   .btn, .interest-card, .tile, .playlist{ transition: none !important; }
 }
+
+/* =========================================================
+   ABOUT PAGE ADD-ON STYLES
+   Paste at the VERY BOTTOM of style.css
+   ========================================================= */
+
+/* About layout */
+.about-wrap{
+  display:grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 14px;
+  align-items:start;
+  margin-top: 12px;
+}
+
+.about-card{
+  border-radius: calc(var(--radius-lg) + 2px);
+  border: 1px solid rgba(43,42,38,.12);
+  background:
+    radial-gradient(700px 420px at 18% 15%, rgba(200,116,77,.12), transparent 62%),
+    radial-gradient(720px 520px at 85% 25%, rgba(153,171,166,.16), transparent 66%),
+    rgba(255,255,255,.46);
+  box-shadow: var(--shadow-soft);
+  padding: 18px 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-card::after{
+  content:"";
+  position:absolute;
+  inset:-40px;
+  opacity:.08;
+  background-image: radial-gradient(circle, rgba(43,42,38,.75) 1px, transparent 1px);
+  background-size: 26px 26px;
+  transform: rotate(-6deg);
+  pointer-events:none;
+}
+
+.about-lede{
+  font-size: 15px;
+  color: rgba(43,42,38,.74);
+  line-height: 1.7;
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+/* badges / fun facts */
+.about-badges{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.badge{
+  padding: 12px 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(43,42,38,.12);
+  background: rgba(255,255,255,.60);
+  box-shadow: 0 10px 22px rgba(20,18,12,.08);
+}
+
+.b-label{
+  display:inline-block;
+  font-weight: 900;
+  font-size: 12px;
+  text-transform: lowercase;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(43,42,38,.12);
+  background:
+    radial-gradient(80px 60px at 20% 20%, rgba(182,143,42,.16), transparent 60%),
+    rgba(255,255,255,.74);
+  margin-bottom: 8px;
+}
+
+.b-text{
+  display:block;
+  font-size: 13px;
+  color: rgba(43,42,38,.72);
+  line-height: 1.5;
+}
+
+/* right-side cards */
+.about-side{
+  display:grid;
+  gap: 14px;
+  position: sticky;
+  top: 84px; /* stays nice under the sticky nav */
+}
+
+.side-card{
+  border-radius: calc(var(--radius-lg) + 2px);
+  border: 1px solid rgba(43,42,38,.12);
+  background:
+    radial-gradient(520px 280px at 18% 15%, rgba(182,143,42,.12), transparent 62%),
+    radial-gradient(520px 320px at 85% 20%, rgba(200,116,77,.12), transparent 66%),
+    rgba(255,255,255,.46);
+  box-shadow: var(--shadow-soft);
+  padding: 16px 16px;
+}
+
+.side-card h3{
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: lowercase;
+  margin-bottom: 10px;
+}
+
+.side-links{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Make quick-link buttons feel less “software-y” */
+.side-links .btn{
+  box-shadow: 0 12px 26px rgba(20,18,12,.10);
+  background: rgba(255,255,255,.62);
+}
+.side-links .btn-warm{
+  background:
+    radial-gradient(120px 70px at 20% 30%, rgba(255,255,255,.65), rgba(255,255,255,0) 65%),
+    linear-gradient(180deg, rgba(200,116,77,.28), rgba(182,143,42,.18));
+}
+
+/* Professional section grid */
+.pro-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.pro-card{
+  padding: 18px 18px;
+}
+
+.pro-card h3{
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: lowercase;
+  margin-bottom: 10px;
+}
+
+.pro-item{
+  display:grid;
+  gap: 10px;
+}
+
+.pro-top{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap: 12px;
+  border-bottom: 1px solid rgba(43,42,38,.10);
+  padding-bottom: 10px;
+  margin-bottom: 2px;
+}
+
+.pro-title{
+  font-weight: 900;
+  text-transform: lowercase;
+  color: rgba(43,42,38,.92);
+}
+
+.pro-meta{
+  font-size: 13px;
+  color: rgba(43,42,38,.62);
+}
+
+.pro-sub{
+  margin-top: 4px;
+  color: rgba(43,42,38,.78);
+}
+
+/* Skill groups */
+.skill-groups{
+  display:grid;
+  gap: 12px;
+}
+
+.skill-block{
+  padding: 12px 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(43,42,38,.12);
+  background: rgba(255,255,255,.58);
+  box-shadow: 0 10px 22px rgba(20,18,12,.08);
+}
+
+.skill-title{
+  font-weight: 900;
+  text-transform: lowercase;
+  margin-bottom: 10px;
+  color: rgba(43,42,38,.82);
+}
+
+.skill-chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 10px;
+}
+
+/* Reuse .chip but soften it slightly for the About page */
+.skill-chips .chip{
+  box-shadow: 0 10px 20px rgba(20,18,12,.06);
+}
+
+/* Make the ABOUT section-head sit better on wide screens */
+.section-head p{
+  max-width: 520px;
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .about-wrap{ grid-template-columns: 1fr; }
+  .about-side{ position: static; }
+  .about-badges{ grid-template-columns: 1fr; }
+  .pro-grid{ grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px){
+  .pro-top{ flex-direction: column; align-items:flex-start; }
+}
