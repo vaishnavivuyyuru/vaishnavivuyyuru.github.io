@@ -34,14 +34,20 @@ body{
   font-family: var(--fontSans);
   color:var(--text);
 
-  /* ===== Layered background: warm stone + sage/olive depth + subtle “technical” teal ===== */
+  /* STRONGER layered background (same palette, more visible) */
   background:
-    radial-gradient(1100px 700px at 12% 0%, rgba(153,171,166,.26), transparent 62%),
-    radial-gradient(900px 560px at 88% 10%, rgba(201,122,85,.14), transparent 62%),
-    radial-gradient(1000px 720px at 60% 92%, rgba(172,176,144,.22), transparent 66%),
-    radial-gradient(900px 600px at 30% 60%, rgba(111,108,67,.18), transparent 68%),
-    radial-gradient(900px 560px at 78% 58%, rgba(127,163,161,.12), transparent 70%),
-    linear-gradient(180deg, rgba(255,255,255,.52), rgba(255,255,255,0) 42%),
+    radial-gradient(1050px 640px at 10% -5%, rgba(153,171,166,.40), transparent 58%),
+    radial-gradient(920px 560px at 92% 4%, rgba(201,122,85,.24), transparent 58%),
+    radial-gradient(1100px 760px at 58% 98%, rgba(172,176,144,.36), transparent 62%),
+    radial-gradient(980px 660px at 22% 62%, rgba(111,108,67,.30), transparent 66%),
+    radial-gradient(980px 640px at 84% 56%, rgba(127,163,161,.22), transparent 68%),
+
+    /* adds depth & “glow” feel without turning yellow */
+    radial-gradient(1400px 820px at 50% 30%, rgba(255,255,255,.34), transparent 62%),
+
+    /* gentle top wash */
+    linear-gradient(180deg, rgba(255,255,255,.62), rgba(255,255,255,0) 44%),
+
     var(--bg);
 }
 
@@ -51,7 +57,7 @@ body::before{
   position:fixed;
   inset:0;
   pointer-events:none;
-  opacity:.075;
+  opacity:.10;            /* was ~.075 */
   mix-blend-mode:multiply;
   background-image:
     repeating-linear-gradient(0deg, rgba(0,0,0,.05) 0px, rgba(0,0,0,.05) 1px, transparent 1px, transparent 3px),
