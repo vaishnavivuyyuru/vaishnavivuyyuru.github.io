@@ -258,6 +258,140 @@ h3{
   animation: ambientShift 120s ease-in-out infinite;
 
 }
+/* ===== HERO (new layout) ===== */
+.hero{
+  padding: 72px 18px 40px;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns: 1.25fr .75fr;
+  gap: 18px;
+  align-items:end;
+}
+
+/* left */
+.hero-left .kicker{
+  margin: 0 0 14px;
+  opacity: .85;
+}
+
+.hero-title{
+  margin: 0 0 10px;
+  letter-spacing: -0.8px;
+  font-size: clamp(44px, 6.2vw, 86px);
+  line-height: 0.95;
+}
+
+.hero-subtitle{
+  margin: 0 0 18px;
+  max-width: 52ch;
+  font-size: 18px;
+}
+
+/* replaces buttons with “index-like” links */
+.hero-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 14px;
+  padding-top: 8px;
+}
+
+.text-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size: 15px;
+  color: var(--muted);
+  border-bottom: 1px solid rgba(255,255,255,.18);
+  padding-bottom: 4px;
+  transition: transform .12s ease, color .12s ease, border-color .12s ease;
+}
+
+.text-link:hover{
+  color: var(--text);
+  border-color: rgba(255,255,255,.35);
+  transform: translateY(-1px);
+}
+
+/* right */
+.hero-note{
+  display:flex;
+  justify-content:flex-end;
+}
+
+.note-card{
+  width: 100%;
+  max-width: 380px;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.04);
+  box-shadow:
+    0 18px 40px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255,255,255,.06);
+  padding: 16px 16px 14px;
+}
+
+.note-label{
+  margin: 0 0 8px;
+  font-size: 12px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.note-big{
+  margin: 0 0 14px;
+  font-size: 18px;
+  line-height: 1.25;
+  color: var(--text);
+}
+
+.note-list{
+  display:grid;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.note-item{
+  display:flex;
+  gap: 10px;
+  align-items:baseline;
+  padding: 10px 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(0,0,0,.14);
+}
+
+.note-k{
+  font-weight: 700;
+  color: var(--text);
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.04);
+  white-space: nowrap;
+}
+
+.note-v{
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.note-foot{
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+  opacity: .9;
+}
+
+/* responsive */
+@media (max-width: 900px){
+  .hero-grid{ grid-template-columns: 1fr; }
+  .hero-note{ justify-content:flex-start; }
+  .note-card{ max-width: 520px; }
+}
 
 /* “now / building / offline” strip */
 .now-strip{
