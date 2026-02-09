@@ -34,6 +34,9 @@ body{
   margin:0;
   font-family: var(--sans);
   color: var(--text);
+  background-size: auto;
+  animation: ambientShift 90s ease-in-out infinite;
+
 
   /* ===== Layered background: espresso base + sage/olive/ocean lights ===== */
   background:
@@ -252,6 +255,8 @@ h3{
   opacity: 1;
   pointer-events:none;
   z-index:-1;
+  animation: ambientShift 120s ease-in-out infinite;
+
 }
 
 /* “now / building / offline” strip */
@@ -503,3 +508,38 @@ h3{
   .links .btn{ display:inline-flex; }
   .hero{ padding-top: 78px; }
 }
+
+/* ===== subtle ambient background motion (very slow, professional) ===== */
+@keyframes ambientShift {
+  0% {
+    background-position:
+      12% 2%,
+      86% 8%,
+      50% 110%,
+      18% 72%,
+      82% 66%,
+      center,
+      center;
+  }
+  50% {
+    background-position:
+      16% 6%,
+      82% 12%,
+      48% 104%,
+      22% 68%,
+      78% 60%,
+      center,
+      center;
+  }
+  100% {
+    background-position:
+      12% 2%,
+      86% 8%,
+      50% 110%,
+      18% 72%,
+      82% 66%,
+      center,
+      center;
+  }
+}
+
