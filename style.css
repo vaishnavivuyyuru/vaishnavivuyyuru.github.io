@@ -705,9 +705,9 @@ h1{
 
 .chip-list{
   list-style:none;
-  margin:0;
-  padding:0;
-  display:flex;
+  margin:5px;
+  padding:10px;
+  display:grid;
   flex-wrap:wrap;
   gap: 10px;
 }
