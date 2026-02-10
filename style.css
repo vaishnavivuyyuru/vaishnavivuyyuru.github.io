@@ -1158,6 +1158,6 @@ code{
 
 /* --- Fix polaroid levels (move top-right down) --- */
 .hero-collage .p2{
-  top: 155px;   /* increase/decrease until it looks right, higher number is more down */
+  top: 170px;   /* increase/decrease until it looks right, higher number is more down */
 }
 
