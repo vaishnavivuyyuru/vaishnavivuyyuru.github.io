@@ -712,7 +712,12 @@ h1{
   gap: 10px;
 }
 .chip{
-  padding: 10px 12px;
+  padding: 12px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  text-decoration: none;
   border-radius: 999px;
   border: 1px solid rgba(43,42,38,.14);
   background: rgba(255,255,255,.60);
@@ -1159,13 +1164,5 @@ code{
 /* --- Fix polaroid levels (move top-right down) --- */
 .hero-collage .p2{
   top: 200px;   /* increase/decrease until it looks right, higher number is more down */
-}
-
-.chip{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: inherit;
 }
 
