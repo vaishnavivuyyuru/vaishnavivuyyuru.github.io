@@ -578,6 +578,7 @@ h1{
 }
 .mini{
   aspect-ratio: 1/1;
+  overflow: hidden; 
   border-radius: 18px;
   border: 1px solid rgba(43,42,38,.12);
   background:
@@ -595,6 +596,7 @@ h1{
   height: 100%;
   object-fit: cover;   /* fills the square cleanly */
   display: block;
+  object-position: 50% 50%;
 }
 
 /* ---------- shelf (reads) ---------- */
