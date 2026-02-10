@@ -1110,4 +1110,6 @@ code{
   color: rgba(40, 40, 40, .65);
 }
 
-
+.polaroid.p2:first-of-type {
+  transform: translateY(32px);
+}
