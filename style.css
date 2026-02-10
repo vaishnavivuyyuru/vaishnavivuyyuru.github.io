@@ -1056,8 +1056,8 @@ code{
 
 .gallery{
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
 @media (max-width: 980px){
@@ -1110,10 +1110,4 @@ code{
   color: rgba(40, 40, 40, .65);
 }
 
-/* --- gallery layout ONLY --- */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
 
