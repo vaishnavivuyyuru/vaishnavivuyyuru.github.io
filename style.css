@@ -1144,23 +1144,6 @@ code{
   }
 }
 
-/* FORCE 3-up gallery on desktop */
-.gallery{
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
-}
-
-/* Tablet */
-@media (max-width: 980px){
-  .gallery{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/* Mobile */
-@media (max-width: 620px){
-  .gallery{
-    grid-template-columns: 1fr;
-  }
+.tape::before{
+  display: none;
 }
