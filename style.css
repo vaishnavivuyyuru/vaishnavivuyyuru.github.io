@@ -1161,3 +1161,11 @@ code{
   top: 200px;   /* increase/decrease until it looks right, higher number is more down */
 }
 
+.chip{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
