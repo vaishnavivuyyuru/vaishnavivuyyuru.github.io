@@ -1111,5 +1111,6 @@ code{
 }
 
 .polaroid.p2:first-of-type {
-  transform: translateY(32px);
+  transform: rotate(8deg) translateY(32px);
 }
+
