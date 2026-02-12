@@ -1296,3 +1296,27 @@ code{
     white-space: normal;
   }
 }
+
+/* =========================================================
+   MUSIC — evenly filled rows (no awkward side gap)
+   ========================================================= */
+
+.chip-list{
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+/* Turn the single <li> into a grid container */
+.chip-list > li{
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px !important;
+}
+
+/* Make each chip fill its grid cell cleanly */
+.chip{
+  width: 100% !important;
+  justify-content: flex-start !important;
+}
+
