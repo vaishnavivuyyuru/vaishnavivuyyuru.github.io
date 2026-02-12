@@ -1218,46 +1218,6 @@ code{
 }
 
 /* =========================================================
-   HERO POLAROIDS — keep zigzag AND center the whole stack
-   (paste at bottom, under your current polaroid fix)
-   ========================================================= */
-
-.hero-collage{
-  position: relative; /* make sure abs children anchor correctly */
-}
-
-/* Center-based anchoring */
-.hero-collage .p1,
-.hero-collage .p2,
-.hero-collage .p3{
-  left: 50% !important;   /* anchor to center */
-  right: auto !important;
-}
-
-/* Zigzag offsets from center */
-.hero-collage .p1{
-  top: 34px !important;
-  transform: translateX(-180px) rotate(-6deg) !important; /* left of center */
-}
-
-.hero-collage .p2{
-  top: 220px !important;
-  transform: translateX(10px) rotate(8deg) !important;    /* slightly right of center */
-}
-
-.hero-collage .p3{
-  top: 420px !important;
-  transform: translateX(-120px) rotate(3deg) !important;  /* left-ish of center */
-}
-
-/* Small screens: reduce offsets so nothing spills */
-@media (max-width: 520px){
-  .hero-collage .p1{ transform: translateX(-140px) rotate(-6deg) !important; }
-  .hero-collage .p2{ transform: translateX(0px) rotate(8deg) !important; }
-  .hero-collage .p3{ transform: translateX(-90px) rotate(3deg) !important; }
-}
-
-/* =========================================================
    FIX 2: MUSIC “ON REPEAT” — clean spacing + left-aligned wrap
    (Works with your current HTML even though all <a> are in one <li>)
    ========================================================= */
