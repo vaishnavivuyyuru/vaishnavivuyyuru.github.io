@@ -1309,3 +1309,21 @@ code{
   filter: saturate(1.03);
 }
 
+/* =========================================================
+   ABOUT PAGE — skill chips side-by-side (no full width)
+   This does NOT affect music chips
+   ========================================================= */
+
+#skills .skill-chips{
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+}
+
+#skills .skill-chips .chip{
+  width: auto !important;          /* prevent grid full width */
+  flex: 0 0 auto !important;        /* no stretching */
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 10px 16px !important;
+}
