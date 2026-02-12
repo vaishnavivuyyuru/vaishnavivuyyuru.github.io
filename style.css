@@ -1166,3 +1166,94 @@ code{
   top: 200px;   /* increase/decrease until it looks right, higher number is more down */
 }
 
+/* =========================================================
+   FIX 1: HERO POLAROIDS — keep a consistent vertical zigzag
+   Paste at the VERY BOTTOM of style.css
+   ========================================================= */
+
+/* Give the collage a stable “stage” height so absolutes don’t collide */
+.hero-collage{
+  /* tall enough for 3 stacked polaroids + breathing room */
+  min-height: clamp(520px, 70vh, 720px) !important;
+}
+
+/* Make polaroid sizing less “jumpy” across breakpoints */
+.hero-collage .polaroid{
+  width: clamp(190px, 22vw, 230px) !important;
+}
+
+/* Lock the zigzag positions (override your @media repositioning) */
+.hero-collage .p1{
+  top: 34px !important;
+  left: 24px !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: rotate(-6deg) !important;
+}
+
+.hero-collage .p2{
+  top: 220px !important;   /* adjust this if you want it tighter/looser */
+  right: 24px !important;
+  left: auto !important;
+  bottom: auto !important;
+  transform: rotate(8deg) !important;
+}
+
+.hero-collage .p3{
+  top: 420px !important;   /* adjust this if you want it tighter/looser */
+  left: 70px !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: rotate(3deg) !important;
+}
+
+/* On very small screens, keep the zigzag but prevent overflow */
+@media (max-width: 520px){
+  .hero-collage{
+    min-height: 660px !important;
+  }
+  .hero-collage .p1{ left: 16px !important; }
+  .hero-collage .p2{ right: 16px !important; }
+  .hero-collage .p3{ left: 40px !important; }
+}
+
+
+/* =========================================================
+   FIX 2: MUSIC “ON REPEAT” — clean spacing + left-aligned wrap
+   (Works with your current HTML even though all <a> are in one <li>)
+   ========================================================= */
+
+.chip-list{
+  /* kill weird spacing from earlier rules */
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+
+  display: block !important;
+}
+
+/* Your HTML has ONE <li> that contains all the song links */
+.chip-list > li{
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;              /* space between songs */
+  justify-content: flex-start !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Make each chip feel like its own pill, not stretched/right-aligned */
+.chip{
+  justify-content: flex-start !important;  /* overrides space-between */
+  width: auto !important;
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+/* Optional: nicer wrapping on tiny screens */
+@media (max-width: 520px){
+  .chip{
+    white-space: normal;
+  }
+}
