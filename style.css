@@ -1161,11 +1161,6 @@ code{
   display: none;
 }
 
-/* --- Fix polaroid levels (move top-right down) --- */
-.hero-collage .p2{
-  top: 200px;   /* increase/decrease until it looks right, higher number is more down */
-}
-
 /* =========================================================
    FIX 1: HERO POLAROIDS — keep a consistent vertical zigzag
    Paste at the VERY BOTTOM of style.css
