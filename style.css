@@ -1280,3 +1280,11 @@ code{
   justify-content: flex-start !important;
 }
 
+/* =========================================================
+   MUSIC — center text inside each pill
+   ========================================================= */
+
+.chip{
+  justify-content: center !important;   /* centers horizontally */
+  text-align: center !important;
+}
