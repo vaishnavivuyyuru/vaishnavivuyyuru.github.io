@@ -1283,3 +1283,29 @@ code{
   justify-content: center !important;   /* centers horizontally */
   text-align: center !important;
 }
+
+/* =========================================================
+   MUSIC — ultra subtle “alive” hover glow
+   ========================================================= */
+
+.chip{
+  transition: 
+    transform .18s ease,
+    box-shadow .25s ease,
+    background .35s ease,
+    filter .25s ease !important;
+}
+
+.chip:hover{
+  background:
+    radial-gradient(160px 90px at 50% 50%, rgba(200,116,77,.22), transparent 70%),
+    rgba(255,255,255,.75) !important;
+
+  box-shadow: 
+    0 16px 34px rgba(20,18,12,.16),
+    0 1px 0 rgba(255,255,255,.6) inset;
+
+  transform: translateY(-2px);
+  filter: saturate(1.03);
+}
+
